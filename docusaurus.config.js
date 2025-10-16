@@ -20,7 +20,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: "https://atnog.github.io/pei-nwdaf-microsite",
+  url: "https://atnog.github.io",
   baseUrl: "/",
 
   // GitHub pages deployment config.
