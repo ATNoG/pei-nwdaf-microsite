@@ -27,7 +27,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "ATNoG", // Usually your GitHub org/user name.
   projectName: "pei-nwdaf-microsite", // Usually your repo name.
-  deploymentBranch: "main"
+  deploymentBranch: "main",
   onBrokenLinks: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
