@@ -10,7 +10,7 @@ function HomepageHeader() {
       <div className="container">
         <h1 className={clsx("hero__title", styles.mainTitle)}>NWDAF</h1>
         <p className={clsx("hero__subtitle", styles.subtitle)}>
-          Intelligence in Action - AchievingTrustworthy AI-Driven Networks
+          Intelligence in Action - Achieving Trustworthy AI-Driven Networks
         </p>
       </div>
     </header>
