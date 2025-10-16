@@ -20,14 +20,14 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://atnog.github.io/pei-nwdaf-microsite",
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "ATNoG", // Usually your GitHub org/user name.
   projectName: "pei-nwdaf-microsite", // Usually your repo name.
-
+  deploymentBranch: "main"
   onBrokenLinks: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
