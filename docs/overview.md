@@ -12,11 +12,11 @@ import Link from '@docusaurus/Link';
 <div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem'}}>
   <Link
     className="button button--primary button--lg"
-    to="/docs/ms1"
+    to="/docs/Milestones"
     aria-label="Go to MS1 docs"
     style={{minWidth: 200, display: 'inline-flex', justifyContent: 'center', alignItems: 'center'}}
   >
-    MS1
+    Milestones
   </Link>
 
   <Link
