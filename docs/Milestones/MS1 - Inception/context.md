@@ -41,6 +41,6 @@ The adoption of TRiSM not only safeguards the system from data and model threats
 ## Goals
 
 - The primary goal of this system is to automaticly and mainly without human intervention aquire data from the network and monitor the system in order to maintain it's quality of service
-- The system aims to collect data from a 5G network using that network functions, and with an architecture made to be scalable and focused on MLOps, will provide intelligence to the network in order for it to have its own intelligence
+- The system aims to collect data from a 5G network using that network functions, and with an architecture made to be scalable and focused on MLOps, will provide intelligence to the network in order for it to have its own intelligence, the different models will be trained and the system will automaticly switch trought the models to ensure high performance of those models
 - The system will nevertheless need human intervention in some decisions to ensure the security of the system (ex: make sure one that the AI cant shutdown an entire area to save bandwith).
 - We also need to ensure that sensitive data about users is correctly processed and used in order not to invade their privacy
