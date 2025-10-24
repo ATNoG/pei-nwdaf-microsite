@@ -40,16 +40,16 @@ const config = {
 
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           sidebarCollapsible: true,
-          routeBasePath: 'docs',
+          routeBasePath: "docs",
         },
-        blog: false,  // optional if you don't use blog
+        blog: false, // optional if you don't use blog
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
@@ -65,9 +65,9 @@ const config = {
       },
       navbar: {
         items: [
-           { to: '/', label: 'Home', position: 'left', exact:true },
-           { to: '/team', label: 'Team', position: 'left' },
-          { to: '/docs/intro', label: 'Docs', position: 'left' },
+          { to: "/", label: "Home", position: "left", exact: true },
+          { to: "/team", label: "Team", position: "left" },
+          { to: "/docs", label: "Docs", position: "left" },
           {
             href: "https://github.com/orgs/ATNoG/teams/pei-2025-nwdaf/repositories",
             label: "Team Repos",

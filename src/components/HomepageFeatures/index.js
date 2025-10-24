@@ -3,7 +3,6 @@ import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
 
-
 const FeatureList = [
   {
     title: "Github",
@@ -15,7 +14,7 @@ const FeatureList = [
     title: "Docs",
     Svg: require("@site/static/img/docs.svg").default,
     description: <>...</>,
-    link: "/docs/intro",
+    link: "/docs",
   },
   {
     title: "Team",
