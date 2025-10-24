@@ -25,3 +25,22 @@ AI TRiSM encompasses four key pillars:
 In this project, AI TRiSM principles are integrated throughout the MLOps pipeline and network interaction layers. Each stage - from data ingestion to model deployment - is accompanied by security validation, audit logging, and trust attestation. The system continuously monitors model integrity, detects anomalies in data flows, and enforces access policies through authentication and authorization mechanisms.
 
 The adoption of TRiSM not only safeguards the system from data and model threats but also enhances transparency and confidence in AI-driven network decisions. It ensures that intelligent network operations remain robust, auditable, and ethically compliant, aligning with the vision of RIGOROUS AI—Responsible, interpretable, governed, and observable intelligence systems.
+
+## Problems
+
+- Maintenance of network
+    - Manual maintenance and setup of a network is expensive and might be slow
+    - According to [5G-Mobix](https://www.5g-mobix.com/assets/files/5G-MOBIX-D6.6-Final-report-on-the-business-models-for-cross-border-5G-deployment-enabling-CAM_v2.0.pdf) it might cost up to 13.800€ per year per station, if you need 100 stations to cover an urban area it adds up to 1.380.000€ per year
+
+- Reactive Aproach to network management
+    - Manual maintenance might only react to a problem after it happens and then try to mitigate it, causing slowdowns and a drop of quality of the system
+
+- Utilization Spikes
+    - If not prepared well, the network might strugle to keep up with spikes in certains areas of the system, and cause drop of quality on those areas without the proper preparation and prediction of those spikes
+
+## Goals
+
+- The primary goal of this system is to automaticly and mainly without human intervention aquire data from the network and monitor the system in order to maintain it's quality of service
+- The system aims to collect data from a 5G network using that network functions, and with an architecture made to be scalable and focused on MLOps, will provide intelligence to the network in order for it to have its own intelligence
+- The system will nevertheless need human intervention in some decisions to ensure the security of the system (ex: make sure one that the AI cant shutdown an entire area to save bandwith).
+- We also need to ensure that sensitive data about users is correctly processed and used in order not to invade their privacy
