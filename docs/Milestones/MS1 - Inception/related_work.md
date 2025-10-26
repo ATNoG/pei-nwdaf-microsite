@@ -20,9 +20,6 @@ Among the leading commercial solutions are those from Ericsson and Nokia, which 
 
 ### Ericsson's NWDAF
 
-The Network Data Analytics Function (NWDAF), defined by 3GPP, represents the standardized framework for analytics and AI-driven automation within the 5G Core (5GC) network. Industrial implementations of NWDAF extend this framework with proprietary capabilities to enhance performance, reduce operational complexity, and enable predictive network management.
-Among the leading commercial solutions are those from Ericsson and Nokia, which provide mature, cloud-native, and 3GPP-compliant analytics platform.
-
 [Link](https://www.ericsson.com/en/core-network/5g-core/network-data-analytics-function)
 
 Is a cloud-native, 3GPP-standardized solution designed to enhance 5G core networks with AI-driven analytics. It collects data from network nodes, generates actionable insights, and enables automated actions to optimize performance, reduce costs, and minimize human intervention, supporting networks that learn and improve over time. Built on Ericsson’s dual-mode 5G Core, it facilitates a smooth transition from 4G to 5G.
