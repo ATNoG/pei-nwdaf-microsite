@@ -4,22 +4,13 @@ Our project, "Intelligence in Action: Achieving Trustworthy AI-Driven Networks,"
 
 ## Relevant Research Papers:
 ---
-### QMP: A Cloud-native MLOps Automation Platform for Zero-Touch Service Assurance in 5G Systems
-[Link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9928678)
+The analyzed works converge around three main pillars: intelligent automation, security and privacy, and model lifecycle management. In the domain of automation, the concepts of Closed Control Loops (CCL) and Assurance Closed-Control Loops (ACCL) enable networks to autonomously react to load or quality-of-service variations, optimizing resources in real time, as seen in network slicing approaches. Architectures such as AI-native orchestration employ Digital Twins to simulate and test models before deployment, reducing failures and allowing proactive updates guided by dependencies between models and datasets.
 
-This platform implements an cloud-native MLOps automation platform for zero-touch service assurance in 5G networks, featuring a full pipeline ( data ingestion, storage, training, retraining and inference ).
-It has a full pipeline that envolves data ingestion, store, training, retraining and inference.
+Security and privacy emerge as central pillars. Initiatives like the RIGOUROUS framework, the Zero Trust model (e.g., THAALOUB), and Privacy-Based Deployments (DevPrivOps) extend end-to-end protection by incorporating continuous authentication, microservice isolation, and intent-based access control. Meanwhile, approaches such as Privacy-Enhanced Data Analytics (PEDA), Homomorphic Encryption, and Privacy-Preserving Attribute-Based Credentials ensure that sensitive data can be analyzed in public environments without exposure, enabling federated learning and anomaly detection while maintaining regulatory compliance (e.g., GDPR).
 
+Regarding model lifecycle management, platforms such as QMP and evolutions of NWDAF automate model training, validation, and replacement through event-driven processes, ensuring continuous adaptation with minimal human intervention. These ideas align with the concept of trustworthy AI, which emphasizes structural and behavioral integrity, explainability, and traceability across all stages of the pipeline, including accuracy monitoring and responsibility transfer.
 
-### MLOps meets Edge Computing: an Edge Platform with Embedded Intelligence towards 6G Systems
-[Link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10188244)
-
-This platform implements a distributed automation platform for motorization and automatic control of "6G" networks.
-User equipment would provide data for the system and data data would be use in the MLOps pipe to detect anomalies and predict performance in order to balance the network.
-Focused more on streaming, using the Platform to Manage Edge Cache (a mini CDN close to users) to scale those caches automatically.
-
-
-#TODO: more
+In summary, the state of the art points to the evolution of networks as autonomous, secure, and auditable systems, where intelligence becomes an intrinsic part of the infrastructure. The current challenge lies in merging performance and trust — integrating ML, MLOps, security, and governance in a transparent and scalable way — as the Intelligence in Action project aims to achieve by exploring intelligent and trustworthy pipelines for future networks.
 
 
 ## Existing Solutions
@@ -28,6 +19,10 @@ The Network Data Analytics Function (NWDAF), defined by 3GPP, represents the sta
 Among the leading commercial solutions are those from Ericsson and Nokia, which demonstrate mature, cloud-native, and 3GPP-compliant analytics platforms.
 
 ### Ericsson's NWDAF
+
+The Network Data Analytics Function (NWDAF), defined by 3GPP, represents the standardized framework for analytics and AI-driven automation within the 5G Core (5GC) network. Industrial implementations of NWDAF extend this framework with proprietary capabilities to enhance performance, reduce operational complexity, and enable predictive network management.
+Among the leading commercial solutions are those from Ericsson and Nokia, which provide mature, cloud-native, and 3GPP-compliant analytics platform.
+
 [Link](https://www.ericsson.com/en/core-network/5g-core/network-data-analytics-function)
 
 Is a cloud-native, 3GPP-standardized solution designed to enhance 5G core networks with AI-driven analytics. It collects data from network nodes, generates actionable insights, and enables automated actions to optimize performance, reduce costs, and minimize human intervention, supporting networks that learn and improve over time. Built on Ericsson’s dual-mode 5G Core, it facilitates a smooth transition from 4G to 5G.
