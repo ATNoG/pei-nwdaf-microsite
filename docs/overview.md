@@ -9,6 +9,7 @@ import Link from '@docusaurus/Link';
 
 # Documentation overview
 
+<!--
 <div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem'}}>
   <Link
     className="button button--primary button--lg"
@@ -28,5 +29,6 @@ import Link from '@docusaurus/Link';
     Meetings
   </Link>
 </div>
+-->
 
 ---
