@@ -14,6 +14,6 @@ By the end of this project's implementation, the following key results are to be
 
 * **Administrative dashboard for system status monitoring and maintenance**: All-in-one interface to ensure efficient system management, while also able to be role-specific to restrict access to different user types.
 
-* **Risk/Security assessments for pipeline-specific decisions**: Human-in-the-loop-based and/or LLM-based risk management, in which the latter is the main actor with most of the uptime in this task. Decisions created by the system's active machine learning model will be categorized in terms of risk and be constantly mediated to look out for improper courses of action.
+* **Risk/Security assessments for pipeline-specific decisions**: Human-in-the-loop and/or automated risk management, in which the latter should be the main actor with most of the uptime in this task. Decisions created by the system's active machine learning model will be categorized in terms of risk and be constantly mediated to look out for improper courses of action.
 
 These expected results will grant a flexible system with secure communication, holistic access to administrators for maintainability, and an MLOps pipeline responsible for the training and integration of increasingly better models for the desired context. Therefore, upbringing smarter networks, sensitive to the environment data that flows into the processing, storage, and filtering.

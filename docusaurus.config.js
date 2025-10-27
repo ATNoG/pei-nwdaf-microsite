@@ -10,7 +10,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "PEI-NWDAF",
+  title: "a",
   tagline: "",
   favicon: "img/favicon.ico",
 
@@ -76,21 +76,55 @@ const config = {
         ],
       },
 
-      footer: {
-        style: "dark",
-        links: [
-          {
-            title: "More",
-            items: [
-              {
-                label: "GitHub",
-                href: "https://github.com/orgs/ATNoG/teams/pei-2025-nwdaf/repositories",
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} PEI-NWDAF`,
-      },
+footer: {
+  style: 'dark',
+  links: [
+    {
+      title: 'More',
+      items: [
+        {
+          label: 'GitHub',
+          href: 'https://github.com/ATNoG/pei-nwdaf'
+        }
+      ]
+    },
+    {
+      title: 'Project Advisors',
+      items: [
+        { 
+          html: 'Rui Aguiar'
+        },
+        { 
+          html: 'Rafael Direito'
+        },
+        { 
+          html: 'Rafael Teixeira'
+        }
+      ]
+    },
+    {
+      title: 'Team Members',
+      items: [
+        { 
+          html: 'Alexandre Andrade'
+        },
+        { 
+          html: 'André Martins'
+        },
+        { 
+          html: 'João Pereira'
+        },
+        { 
+          html: 'Miguel Neto'
+        },
+        { 
+          html: 'Thiago Vicente'
+        }
+      ]
+    }
+  ],
+  copyright: 'Copyright 2025 <br>ATNoG @ IT @ UA'
+},
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.jettwaveDark,
