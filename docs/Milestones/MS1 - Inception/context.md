@@ -63,9 +63,10 @@ The adoption of TRiSM not only safeguards the system from data and model threats
 - Future networks will be so complex that manual maintenance would not be possible
 - Reactive Aproach to network management
     - Manual maintenance might only react to a problem after it happens and then try to mitigate it, causing slowdowns and a drop of quality of the system
+    - Proactive approach that predicts those problems before they even happen can prepare the network for those problems before they take place
 
-- SLA violations on Utilization Spikes
-    - If not prepared well, the network might struggle to keep up with spikes in certains areas of the system, and cause drop of quality on those areas without the proper preparation and prediction of those spikes, those drops of quality will cause a violation on the requirements agreement to the quality of the network
+- SLA violations 
+    - If not prepared well, the network might struggle to keep up with anomalies(attacks, some server died, utilization spikes) in certains areas of the system, and cause drop of quality on those areas without the proper preparation and prediction of those spikes, those drops of quality will cause a violation on the requirements agreement to the quality of the network
 
 ## Goals
 
