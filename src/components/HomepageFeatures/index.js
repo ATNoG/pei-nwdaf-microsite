@@ -3,24 +3,20 @@ import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
 
-
 const FeatureList = [
   {
     title: "Github",
     Svg: require("@site/static/img/github-mark.svg").default,
-    description: <>...</>,
-    link: "https://github.com/orgs/ATNoG/teams/pei-2025-nwdaf/repositories",
+    link: "https://github.com/ATNoG/pei-nwdaf",
   },
   {
-    title: "Docs",
+    title: "Documentation",
     Svg: require("@site/static/img/docs.svg").default,
-    description: <>...</>,
-    link: "/docs/intro",
+    link: "/docs",
   },
   {
     title: "Team",
     Svg: require("@site/static/img/team.svg").default,
-    description: <>...</>,
     link: "/team",
   },
 ];

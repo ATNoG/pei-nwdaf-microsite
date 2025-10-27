@@ -49,22 +49,23 @@ const tutors = [
   {
     fname: 'Rafael',
     lname: 'Teixeira',
-    img: require('@site/static/img/github.svg').default,
+    img: require('@site/static/img/team/teixeira.jpg').default,
     mail:"rafaelgteixeira@ua.pt"
-  },
-  {
-    fname: 'Rafael',
-    lname: 'Direito',
-    img: require('@site/static/img/github.svg').default,
-    mail:"rafael.neves.direito@ua.pt",
-    github:"https://github.com/rafael-direito"
   },
   {
     fname: 'Rui',
     lname: 'Aguiar',
-    img: require('@site/static/img/github.svg').default,
+    img: require('@site/static/img/team/aguiar.jpg').default,
     mail:"ruilaa@ua.pt"
   },
+  {
+    fname: 'Rafael',
+    lname: 'Direito',
+    img: require('@site/static/img/team/direito.jpg').default,
+    mail:"rafael.neves.direito@ua.pt",
+    github:"https://github.com/rafael-direito"
+  },
+
 
 ];
 

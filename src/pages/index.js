@@ -8,9 +8,9 @@ function HomepageHeader() {
   return (
     <header className={clsx("hero", styles.heroBanner)}>
       <div className="container">
-        <h1 className={clsx("hero__title", styles.mainTitle)}>NWDAF</h1>
+        <h1 className={clsx("hero__title", styles.mainTitle)}>Intelligence in Action</h1>
         <p className={clsx("hero__subtitle", styles.subtitle)}>
-          Intelligence in Action - Achieving Trustworthy AI-Driven Networks
+            Achieving Trustworthy AI-Driven Networks
         </p>
       </div>
     </header>

@@ -10,7 +10,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "PEI-NWDAF",
+  title: "AION - Intelligence in Action",
   tagline: "",
   favicon: "img/favicon.ico",
 
@@ -40,16 +40,16 @@ const config = {
 
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           sidebarCollapsible: true,
-          routeBasePath: 'docs',
+          routeBasePath: "docs",
         },
-        blog: false,  // optional if you don't use blog
+        blog: false, // optional if you don't use blog
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
@@ -65,9 +65,9 @@ const config = {
       },
       navbar: {
         items: [
-           { to: '/', label: 'Home', position: 'left', exact:true },
-           { to: '/team', label: 'Team', position: 'left' },
-          { to: '/docs/intro', label: 'Docs', position: 'left' },
+          { to: "/", label: "Home", position: "left", exact: true },
+          { to: "/team", label: "Team", position: "left" },
+          { to: "/docs", label: "Docs", position: "left" },
           {
             href: "https://github.com/orgs/ATNoG/teams/pei-2025-nwdaf/repositories",
             label: "Team Repos",
@@ -76,21 +76,55 @@ const config = {
         ],
       },
 
-      footer: {
-        style: "dark",
-        links: [
-          {
-            title: "More",
-            items: [
-              {
-                label: "GitHub",
-                href: "https://github.com/orgs/ATNoG/teams/pei-2025-nwdaf/repositories",
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} PEI-NWDAF`,
-      },
+footer: {
+  style: 'dark',
+  links: [
+    {
+      title: 'More',
+      items: [
+        {
+          label: 'GitHub',
+          href: 'https://github.com/ATNoG/pei-nwdaf'
+        }
+      ]
+    },
+    {
+      title: 'Project Advisors',
+      items: [
+        { 
+          html: 'Rui Aguiar'
+        },
+        { 
+          html: 'Rafael Direito'
+        },
+        { 
+          html: 'Rafael Teixeira'
+        }
+      ]
+    },
+    {
+      title: 'Team Members',
+      items: [
+        { 
+          html: 'Alexandre Andrade'
+        },
+        { 
+          html: 'André Martins'
+        },
+        { 
+          html: 'João Pereira'
+        },
+        { 
+          html: 'Miguel Neto'
+        },
+        { 
+          html: 'Thiago Vicente'
+        }
+      ]
+    }
+  ],
+  copyright: 'Copyright 2025 <br>ATNoG @ IT @ UA'
+},
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.jettwaveDark,
