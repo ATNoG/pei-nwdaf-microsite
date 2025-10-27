@@ -10,7 +10,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "a",
+  title: "AION - Intelligence in Action",
   tagline: "",
   favicon: "img/favicon.ico",
 
