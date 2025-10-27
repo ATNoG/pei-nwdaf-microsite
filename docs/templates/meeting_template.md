@@ -6,9 +6,9 @@ authors: [your_name]
 
 # Minute [Number]
 
-| **Data** | **Método** | **Duração** |
+| **Data** | **Duração** | **Método** |
 |:----------|:------------|:-------------|
-| YYYY-MM-DD | [Presencial / Online / Híbrido] | [Start Time - End Time] |
+| YYYY-MM-DD | [Start Time - End Time] | [Presencial / Online / Híbrido] |
 
 ## Supervisores presentes
 - Rafael Teixeira [✔️/❌]
