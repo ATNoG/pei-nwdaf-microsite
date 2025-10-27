@@ -71,8 +71,8 @@ sidebar_label: Calendar
       <td>&nbsp;&nbsp;&bull; Basic UI Dashboard</td>
     </tr>
     <tr style={{backgroundColor: '#ffe8d6', borderBottom: '1px solid #999'}}>
-      <td rowspan="5" style={{borderRight: '1px solid #999'}}><strong>M4 Transition</strong></td>
-      <td rowspan="5" align="center" style={{borderRight: '1px solid #999'}}>17/12/2025 ↔ 21/01/2026</td>
+      <td rowspan="5" style={{borderRight: '1px solid #999'}}><strong></strong></td>
+      <td rowspan="5" align="center" style={{borderRight: '1px solid #999'}}></td>
       <td>Security refinement</td>
     </tr>
     <tr style={{backgroundColor: '#ffe8d6', borderBottom: '1px solid #999'}}>
@@ -88,8 +88,8 @@ sidebar_label: Calendar
       <td>Decision assessment &amp; Enforcement</td>
     </tr>
     <tr style={{backgroundColor: '#ffd4b8', borderBottom: '1px solid #999'}}>
-      <td rowspan="2" style={{borderRight: '1px solid #999'}}><strong>M5 Delivery</strong></td>
-      <td rowspan="2" align="center" style={{borderRight: '1px solid #999'}}>22/01/2026 ↔ 04/02/2026</td>
+      <td rowspan="2" style={{borderRight: '1px solid #999'}}><strong></strong></td>
+      <td rowspan="2" align="center" style={{borderRight: '1px solid #999'}}></td>
       <td>STUDENTS@DETI Final Presentation</td>
     </tr>
     <tr style={{backgroundColor: '#ffd4b8', borderBottom: '1px solid #999'}}>
