@@ -14,15 +14,14 @@ NWDAF collects data from various network functions such as the AMF (Access and M
 
 Key capabilities include:
 
-Data Aggregation and Correlation: Integrates and normalizes multi-domain and multi-source network data (e.g., performance metrics, event logs, user mobility patterns) into a unified analytical view.
+- Data Aggregation and Correlation: Integrates and normalizes multi-domain and multi-source network data (e.g., performance metrics, event logs, user mobility patterns) into a unified analytical view.
 
-Predictive and Descriptive Analytics: Supports both historical analysis for performance evaluation and predictive models for forecasting network load, traffic anomalies, and resource demands.
+- Predictive and Descriptive Analytics: Supports both historical analysis for performance evaluation and predictive models for forecasting network load, traffic anomalies, and resource demands.
 
-Closed-loop Automation: Feeds real-time insights back into control systems to trigger self-optimizing network (SON) actions, such as resource reallocation, policy adjustment, or fault mitigation.
+- Closed-loop Automation: Feeds real-time insights back into control systems to trigger self-optimizing network (SON) actions, such as resource reallocation, policy adjustment, or fault mitigation.
 
-Extensibility via AI/ML Integration: NWDAF can host or interface with external machine learning models within an MLOps-driven ecosystem, supporting continuous model training, deployment, and lifecycle management.
+- Extensibility via AI/ML Integration: NWDAF can host or interface with external machine learning models within an MLOps-driven ecosystem, supporting continuous model training, deployment, and lifecycle management.
 
-In this project, NWDAF serves as the central analytics hub, orchestrating the flow of data and insights between the network, MLOps pipeline, and governance layers. It ensures that network intelligence remains context-aware, adaptive, and aligned with operational goals and service-level agreements (SLAs).
 
 ## MLOps Pipeline
 
@@ -33,6 +32,10 @@ The ML lifecycle is inherently iterative, spanning from data preparation to post
 An MLOps pipeline automates and orchestrates each of these stages—data ingestion, preprocessing, training, validation, deployment, monitoring, and governance—ensuring that the end-to-end process is reproducible, auditable, and secure. It enforces traceability, version control, and compliance through integration with AI TRiSM principles, ensuring that every model decision is explainable and accountable.
 
 In the context of this project, the MLOps pipeline is the foundation for intelligent network management. It continuously transforms data from the NWDAF into actionable intelligence, enabling predictive analytics and adaptive optimization. By maintaining a closed feedback loop between model training and network behavior, the pipeline ensures that the system evolves dynamically with changing network conditions—achieving the vision of autonomous, self-healing, and self-optimizing networks.
+
+## Security
+
+As networks become increasingly data-driven and interconnected, security emerges as a foundational pillar for ensuring trust, resilience, and privacy across all layers of operation. The massive influx of user data—from mobile devices, IoT sensors, and mission-critical systems—introduces complex challenges related to data protection, identity management, and secure information exchange. In next-generation networks such as 5G and 6G, where virtualization, edge computing, and AI-driven automation converge, the attack surface expands exponentially, demanding robust, adaptive, and intelligent security mechanisms. Security can no longer be treated as a static perimeter defense; it must be embedded natively into the network and MLOps pipeline, enabling continuous monitoring, dynamic threat detection, and automated response. This includes safeguarding user data through encryption and anonymization, securing APIs and data streams through authentication and access control, and ensuring model integrity against adversarial manipulation. Ultimately, the goal is to establish a zero-trust architecture that upholds confidentiality, integrity, and availability, ensuring that as networks evolve to become more autonomous, they remain secure, compliant, and trustworthy by design.
 
 ## Trust, Risk, and Security Management (AI TRiSM / RIGOROUS)
 
