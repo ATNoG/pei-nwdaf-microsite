@@ -43,11 +43,11 @@ sidebar_label: Calendar
       <td>Requirements assessment</td>
     </tr>
     <tr style={{backgroundColor: '#e1f5e1', borderBottom: '1px solid #999'}}>
-      <td align="center" style={{borderRight: '1px solid #999'}}>29/10/2025 ↔ 7/11/2025</td>
+      <td align="center" style={{borderRight: '1px solid #999'}}>29/10/2025 ↔ 6/11/2025</td>
       <td>User Stories</td>
     </tr>
     <tr style={{backgroundColor: '#e1f5e1', borderBottom: '1px solid #999'}}>
-      <td align="center" style={{borderRight: '1px solid #999'}}>29/10/2025 ↔ 7/11/2025</td>
+      <td align="center" style={{borderRight: '1px solid #999'}}>29/10/2025 ↔ 6/11/2025</td>
       <td>Use Cases</td>
     </tr>
     <tr style={{backgroundColor: '#e1f5e1'}}>

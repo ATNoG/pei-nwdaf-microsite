@@ -69,7 +69,7 @@ const config = {
           { to: "/team", label: "Team", position: "left" },
           { to: "/docs", label: "Docs", position: "left" },
           {
-            href: "https://github.com/orgs/ATNoG/teams/pei-2025-nwdaf/repositories",
+            href: "https://github.com/ATNoG/pei-nwdaf",
             label: "Team Repos",
             position: "right",
           },
@@ -91,13 +91,13 @@ footer: {
     {
       title: 'Project Advisors',
       items: [
-        { 
+        {
           html: 'Rui Aguiar'
         },
-        { 
+        {
           html: 'Rafael Direito'
         },
-        { 
+        {
           html: 'Rafael Teixeira'
         }
       ]
@@ -105,19 +105,19 @@ footer: {
     {
       title: 'Team Members',
       items: [
-        { 
+        {
           html: 'Alexandre Andrade'
         },
-        { 
+        {
           html: 'André Martins'
         },
-        { 
+        {
           html: 'João Pereira'
         },
-        { 
+        {
           html: 'Miguel Neto'
         },
-        { 
+        {
           html: 'Thiago Vicente'
         }
       ]
