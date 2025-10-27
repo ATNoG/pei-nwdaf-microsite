@@ -11,6 +11,7 @@ const sidebars = {
             items: [
               { type: "doc", id: "Milestones/MS1 - Inception/research_group"},
               { type: "doc", id: "Milestones/MS1 - Inception/context" },
+              { type: "doc", id: "Milestones/MS1 - Inception/goals" },
               { type: "doc", id: "Milestones/MS1 - Inception/related_work" },
               { type: "doc", id: "Milestones/MS1 - Inception/expected_results" },
               { type: "doc", id: "Milestones/MS1 - Inception/deliverables" },
