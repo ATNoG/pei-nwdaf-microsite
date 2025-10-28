@@ -9,20 +9,18 @@ sidebar_label: Related Work
 Our project, "Intelligence in Action: Achieving Trustworthy AI-Driven Networks," integrates machine learning (ML) and automation pipelines (MLOps) with 5G/6G networks, emphasizing trust, risk, and security management with dynamic network participation. We reviewed key platforms and research. For each we assembled key features that may be relevant to our proejct.
 
 ## Relevant Research Papers:
----
 
 The increasing complexity of 5G and 6G networks is driving the integration of Machine Learning (ML) and MLOps techniques to automate decisions, predict failures, and continuously optimize performance <sup>[[1]](#ref1)</sup><sup>[[2]](#ref2)</sup>. However, the reliability and security of these solutions depend on how they are managed, audited, and updated, leading to the need for AI-native and trustworthy architectures such as NWDAF and RIGOUROUS <sup>[[3]](#ref3)</sup><sup>[[4]](#ref4)</sup>.
 
 The reviewed works converge around three main axes: intelligent automation, security and privacy, and model lifecycle management. In the automation domain, concepts like Closed Control Loops (CCL) and Assurance Closed-Control Loops (ACCL) allow networks to react autonomously to load or Quality of Service (QoS) variations, optimizing resources in real time <sup>[[5]](#ref5)</sup><sup>[[6]](#ref6)</sup>. Architectures such as AI-native orchestration leverage Digital Twins to simulate and test models before deployment, reducing failures and enabling proactive updates guided by dependencies between models and datasets <sup>[[6]](#ref6)</sup>.
 
-Security and privacy emerge as central pillars. Initiatives such as the RIGOUROUS framework, the Zero Trust model (e.g., THAALOUB), and Privacy-Based Deployments (DevPrivOps) extend end-to-end protection by incorporating continuous authentication, microservice isolation, and intent-based access policies <sup>[[4]](#ref4)</sup><sup>[[7]](#ref7)</sup><sup>[[8]](#ref8)</sup>. Meanwhile, approaches like Privacy-Enhanced Data Analytics (PEDA), Homomorphic Encryption, and Privacy-Preserving Attribute-Based Credentials ensure the analysis of sensitive data in public or shared environments without exposure, enabling federated learning and anomaly detection while maintaining regulatory compliance (e.g., GDPR) <sup>[[9]](#ref9)</sup>[[10]](#ref10)[[11]](#ref11).
+Security and privacy emerge as central pillars. Initiatives such as the RIGOUROUS framework, the Zero Trust model (e.g., THAALOUB), and Privacy-Based Deployments (DevPrivOps) extend end-to-end protection by incorporating continuous authentication, microservice isolation, and intent-based access policies <sup>[[4]](#ref4)</sup><sup>[[7]](#ref7)</sup><sup>[[8]](#ref8)</sup>. Meanwhile, approaches like Privacy-Enhanced Data Analytics (PEDA), Homomorphic Encryption, and Privacy-Preserving Attribute-Based Credentials ensure the analysis of sensitive data in public or shared environments without exposure, enabling federated learning and anomaly detection while maintaining regulatory compliance (e.g., GDPR) <sup>[[9]](#ref9)</sup><sup>[[10]](#ref10)[[11]](#ref11)</sup>.
 
-Regarding model lifecycle management, platforms like QMP and the latest NWDAF evolutions automate model training, validation, and replacement through event-driven processes, ensuring continuous adaptation with minimal human intervention [[12]](#ref12)[[13]](#ref13). These ideas align with the trustworthy AI concept, which promotes structural and behavioral integrity, explainability, and traceability across all stages of the ML pipeline, including precision monitoring and responsibility transfer <sup>[[1]](#ref1)</sup>[[13]](#ref13).
+Regarding model lifecycle management, platforms like QMP and the latest NWDAF evolutions automate model training, validation, and replacement through event-driven processes, ensuring continuous adaptation with minimal human intervention [[12]](#ref12)[[13]](#ref13). These ideas align with the trustworthy AI concept, which promotes structural and behavioral integrity, explainability, and traceability across all stages of the ML pipeline, including precision monitoring and responsibility transfer <sup>[[1]](#ref1)</sup><sup>[[13]](#ref13)</sup>.
 
 In summary, the state of the art indicates the evolution of networks into autonomous, secure, and auditable systems where intelligence becomes an intrinsic part of the infrastructure. The current challenge is to balance performance and trust—integrating ML, MLOps, security, and governance transparently and at scale, as proposed in the Intelligence in Action project, which explores reliable and adaptive pipelines for future networks <sup>[[6]](#ref6)</sup><sup>[[3]](#ref3)</sup>.
 
 ## Existing Solutions
----
 The Network Data Analytics Function (NWDAF), defined by 3GPP, represents the standardized framework for analytics and AI-driven automation within the 5G Core (5GC) network. Industrial implementations of NWDAF extend this framework with proprietary capabilities to enhance performance, reduce operational complexity, and enable predictive network management.
 Among the leading commercial solutions are those from Ericsson and Nokia, which demonstrate mature, cloud-native, and 3GPP-compliant analytics platforms.
 
@@ -46,6 +44,7 @@ Is a cloud-native, 3GPP-compliant solution tailored for 5G networks, leveraging 
 - Expanded use cases: Encompasses traffic prediction, QoS optimization, and anomaly detection, focusing on predictive analytics and network resilience.
 
 
+---
 ## References
 - <a name="ref1"></a> [1] M. Anisetti, C. A. Ardagna, F. Berto and A. D. Bruna, "ML Assurance in 6G-Enabled Edge-Cloud Continuum Workflows," 2025 IEEE Wireless Communications and Networking Conference (WCNC), Milan, Italy, 2025, pp. 1-6, doi: 10.1109/WCNC61545.2025.10978637.
 - <a name="ref2"></a> [2] A. Tiwari, S. Das, A. Kumar and S. Srivastava, "NWDAF in 5G: Architecture, Use Cases, and Evolution Across 3GPP Releases," 2025 National Conference on Communications (NCC), New Delhi, India, 2025, pp. 1-6, doi: 10.1109/NCC63735.2025.10983338.

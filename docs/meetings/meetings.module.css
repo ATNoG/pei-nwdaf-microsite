@@ -1,0 +1,235 @@
+.meetingsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.meetingCard {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 2px solid rgba(59, 130, 246, 0.2);
+  box-shadow: 
+    0 2px 4px rgba(59, 130, 246, 0.05),
+    0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+.meetingCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #3b82f6 0%, #60a5fa 100%);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+
+.meetingCard:hover::before {
+  transform: scaleY(1);
+}
+
+.meetingCard:hover {
+  transform: translateX(8px);
+  border-color: #3b82f6;
+  box-shadow: 
+    0 8px 16px rgba(59, 130, 246, 0.15),
+    0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.meetingIcon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  border-radius: 12px;
+  color: #3b82f6;
+  transition: all 0.3s ease;
+}
+
+.meetingCard:hover .meetingIcon {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: #ffffff;
+  transform: rotate(-5deg) scale(1.05);
+}
+
+.meetingIcon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.meetingContent {
+  flex: 1;
+}
+
+.meetingContent h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin: 0 0 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.meetingCard:hover .meetingContent h3 {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.meetingContent p {
+  color: #64748b;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.readMore {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #3b82f6;
+  transition: all 0.3s ease;
+}
+
+.meetingCard:hover .readMore {
+  color: #2563eb;
+  transform: translateX(4px);
+}
+
+.infoBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-left: 4px solid #3b82f6;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-top: 2rem;
+}
+
+.infoIcon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  color: #3b82f6;
+}
+
+.infoBox p {
+  margin: 0;
+  color: #1e40af;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Dark mode support */
+[data-theme='dark'] .meetingCard {
+  background: #1e293b;
+  border-color: rgba(96, 165, 250, 0.3);
+}
+
+[data-theme='dark'] .meetingCard:hover {
+  border-color: #60a5fa;
+  box-shadow: 
+    0 8px 16px rgba(96, 165, 250, 0.2),
+    0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .meetingIcon {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(96, 165, 250, 0.15) 100%);
+  color: #60a5fa;
+}
+
+[data-theme='dark'] .meetingCard:hover .meetingIcon {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: #ffffff;
+}
+
+[data-theme='dark'] .meetingContent h3 {
+  color: #93c5fd;
+}
+
+[data-theme='dark'] .meetingCard:hover .meetingContent h3 {
+  background: linear-gradient(135deg, #60a5fa 0%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme='dark'] .meetingContent p {
+  color: #94a3b8;
+}
+
+[data-theme='dark'] .readMore {
+  color: #60a5fa;
+}
+
+[data-theme='dark'] .meetingCard:hover .readMore {
+  color: #93c5fd;
+}
+
+[data-theme='dark'] .infoBox {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(96, 165, 250, 0.1) 100%);
+  border-left-color: #60a5fa;
+}
+
+[data-theme='dark'] .infoIcon {
+  color: #60a5fa;
+}
+
+[data-theme='dark'] .infoBox p {
+  color: #cbd5e1;
+}
+
+/* Responsive design */
+@media screen and (max-width: 640px) {
+  .meetingCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+
+  .meetingCard:hover {
+    transform: translateX(4px);
+  }
+
+  .meetingIcon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .meetingIcon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .meetingContent h3 {
+    font-size: 1.1rem;
+  }
+
+  .meetingContent p {
+    font-size: 0.9rem;
+  }
+
+  .infoBox {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
