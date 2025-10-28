@@ -10,11 +10,11 @@ sidebar_label: Goals
 
 ## Tasks
 
-- **Log manager**
-- **Interfaces**
+- **Log management**
+- **Create API’s & UI**
 - **Produce insights**
 - **Data filtering**
 - **Data storage**
-- **MLOps pipeline**
-- **Continuous security $ privacy assessment and enforcement**
+- **Run a MLOps pipeline**
+- **Continuous security & privacy assessment and enforcement**
 - **Risk management**
