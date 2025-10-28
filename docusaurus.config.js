@@ -89,8 +89,7 @@ footer: {
       title: 'More',
       items: [
         {
-          label: 'GitHub',
-          href: 'https://github.com/ATNoG/pei-nwdaf'
+          html: '<a href="https://github.com/ATNoG/pei-nwdaf" target="_blank" rel="noopener noreferrer">GitHub</a>'
         }
       ]
     },
