@@ -8,19 +8,19 @@ const FeatureList = [
     title: "Github",
     Svg: require("@site/static/img/github-mark.svg").default,
     link: "https://github.com/ATNoG/pei-nwdaf",
-    description: "Explore our open-source codebase, contribute to development, and track project progress on GitHub.",
+    description: "GitHub codebases, with project organization.",
   },
   {
     title: "Documentation",
     Svg: require("@site/static/img/docs.svg").default,
     link: "/docs",
-    description: "Access comprehensive guides, API references, and technical documentation for the NWDAF project.",
+    description: "General project documentation, milestones and deliverables.",
   },
   {
     title: "Team",
     Svg: require("@site/static/img/team.svg").default,
     link: "/team",
-    description: "Meet the talented researchers and developers driving innovation in AI-powered network analytics.",
+    description: "The group behind this effort, made without coffee.",
   },
 ];
 

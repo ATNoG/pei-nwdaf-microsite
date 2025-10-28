@@ -24,7 +24,7 @@ import Link from '@docusaurus/Link';
     borderRadius: '16px',
     padding: '2rem',
     boxShadow: '0 4px 6px rgba(59, 130, 246, 0.05), 0 10px 15px rgba(0, 0, 0, 0.08)',
-    transition: 'all 0.3s ease',
+    transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
     position: 'relative',
     overflow: 'hidden'
   }}
@@ -55,7 +55,7 @@ import Link from '@docusaurus/Link';
     }}>Project progress through development milestones (MS): MS1, MS2...</p>
   </Link>
 
-  <Link to="/docs/meetings/meetings-overview" style={{
+  <Link to="/docs/category/meetings" style={{
     textDecoration: 'none',
     color: 'inherit',
     background: '#ffffff',
@@ -63,7 +63,7 @@ import Link from '@docusaurus/Link';
     borderRadius: '16px',
     padding: '2rem',
     boxShadow: '0 4px 6px rgba(59, 130, 246, 0.05), 0 10px 15px rgba(0, 0, 0, 0.08)',
-    transition: 'all 0.3s ease',
+    transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
     position: 'relative',
     overflow: 'hidden'
   }}

@@ -112,19 +112,17 @@ function ProjectDescription() {
       <div className="container">
         <div className={styles.projectBox}>
           <div className={styles.descriptionContent}>
+            <div className={styles.iconContainer}>
+              <img
+                src={require("@site/static/img/icon.png").default}
+                className={styles.placeholderIcon}
+              />
+            </div>
             <div className={styles.textContent}>
               <h2 className={styles.descriptionTitle}>Our Mission</h2>
               <blockquote className={styles.descriptionQuote}>
                 Making networks intelligent, adaptive, and trustworthy.
               </blockquote>
-            </div>
-            <div className={styles.imagePlaceholder}>
-              <div className={styles.placeholderContent}>
-                <img
-                  src={require("@site/static/img/icon.png").default}
-                  className={styles.placeholderIcon}
-                />
-              </div>
             </div>
           </div>
         </div>
