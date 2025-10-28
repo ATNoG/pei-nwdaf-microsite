@@ -1,0 +1,201 @@
+.milestonesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.milestoneCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 2px solid rgba(59, 130, 246, 0.2);
+  box-shadow: 
+    0 4px 6px rgba(59, 130, 246, 0.05),
+    0 10px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.milestoneCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6 0%, #60a5fa 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.milestoneCard:hover::before {
+  transform: scaleX(1);
+}
+
+.milestoneCard:hover {
+  transform: translateY(-8px);
+  border-color: #3b82f6;
+  box-shadow: 
+    0 12px 24px rgba(59, 130, 246, 0.2),
+    0 20px 40px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.milestoneHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.milestoneCard h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+
+
+.milestoneCard h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin: 0.5rem 0 1rem 0;
+}
+
+
+
+.milestoneCard p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+
+
+.milestoneBadge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+.milestoneBadge.comingSoon {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+}
+
+.milestoneFooter {
+  border-top: 1px solid rgba(59, 130, 246, 0.1);
+  padding-top: 1rem;
+  margin-top: auto;
+}
+
+
+
+.viewButton {
+  font-weight: 600;
+  color: #3b82f6;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.milestoneCard:hover .viewButton {
+  color: #2563eb;
+  transform: translateX(4px);
+}
+
+/* Dark mode support */
+[data-theme='dark'] .milestoneCard {
+  background: #1e293b;
+  border-color: rgba(96, 165, 250, 0.3);
+}
+
+[data-theme='dark'] .milestoneCard:hover {
+  border-color: #60a5fa;
+  box-shadow: 
+    0 12px 24px rgba(96, 165, 250, 0.3),
+    0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .milestoneCard h2 {
+  background: linear-gradient(135deg, #60a5fa 0%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+
+[data-theme='dark'] .milestoneCard h3 {
+  color: #93c5fd;
+}
+
+
+
+[data-theme='dark'] .milestoneCard p {
+  color: #94a3b8;
+}
+
+
+
+[data-theme='dark'] .viewButton {
+  color: #60a5fa;
+}
+
+[data-theme='dark'] .milestoneCard:hover .viewButton {
+  color: #93c5fd;
+}
+
+/* Responsive design */
+@media screen and (max-width: 996px) {
+  .milestonesContainer {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .milestoneCard h2 {
+    font-size: 2rem;
+  }
+
+  .milestoneCard h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .milestoneCard {
+    padding: 1.5rem;
+  }
+
+  .milestoneCard h2 {
+    font-size: 1.75rem;
+  }
+
+  .milestoneCard h3 {
+    font-size: 1.1rem;
+  }
+
+  .milestoneCard p {
+    font-size: 0.95rem;
+  }
+}

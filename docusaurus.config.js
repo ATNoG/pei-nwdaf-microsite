@@ -12,7 +12,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "AION - Intelligence in Action",
   tagline: "",
-  favicon: "img/favicon.ico",
+  favicon: "img/icon.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -20,14 +20,14 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
-  baseUrl: "/",
+  url: "https://atnog.github.io/",
+  baseUrl: "pei-nwdaf-microsite",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "ATNoG", // Usually your GitHub org/user name.
   projectName: "pei-nwdaf-microsite", // Usually your repo name.
-
+  deploymentBranch: "main",
   onBrokenLinks: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
@@ -69,7 +69,7 @@ const config = {
           { to: "/team", label: "Team", position: "left" },
           { to: "/docs", label: "Docs", position: "left" },
           {
-            href: "https://github.com/orgs/ATNoG/teams/pei-2025-nwdaf/repositories",
+            href: "https://github.com/ATNoG/pei-nwdaf",
             label: "Team Repos",
             position: "right",
           },
@@ -91,13 +91,13 @@ footer: {
     {
       title: 'Project Advisors',
       items: [
-        { 
+        {
           html: 'Rui Aguiar'
         },
-        { 
+        {
           html: 'Rafael Direito'
         },
-        { 
+        {
           html: 'Rafael Teixeira'
         }
       ]
@@ -105,19 +105,19 @@ footer: {
     {
       title: 'Team Members',
       items: [
-        { 
+        {
           html: 'Alexandre Andrade'
         },
-        { 
+        {
           html: 'André Martins'
         },
-        { 
+        {
           html: 'João Pereira'
         },
-        { 
+        {
           html: 'Miguel Neto'
         },
-        { 
+        {
           html: 'Thiago Vicente'
         }
       ]

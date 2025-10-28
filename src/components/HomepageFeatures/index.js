@@ -8,16 +8,19 @@ const FeatureList = [
     title: "Github",
     Svg: require("@site/static/img/github-mark.svg").default,
     link: "https://github.com/ATNoG/pei-nwdaf",
+    description: "GitHub codebases, with project organization.",
   },
   {
     title: "Documentation",
     Svg: require("@site/static/img/docs.svg").default,
     link: "/docs",
+    description: "General project documentation, milestones and deliverables.",
   },
   {
     title: "Team",
     Svg: require("@site/static/img/team.svg").default,
     link: "/team",
+    description: "The group behind this effort, made without coffee.",
   },
 ];
 
