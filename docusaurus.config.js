@@ -64,6 +64,12 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
+        logo: {
+          alt: "AION Logo",
+          src: "img/icon.png",
+          href: "/",
+          target: "_self",
+        },
         items: [
           { to: "/", label: "Home", position: "left", exact: true },
           { to: "/team", label: "Team", position: "left" },
