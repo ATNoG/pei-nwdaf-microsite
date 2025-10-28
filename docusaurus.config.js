@@ -12,7 +12,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "AION - Intelligence in Action",
   tagline: "",
-  favicon: "img/favicon.ico",
+  favicon: "img/icon.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
