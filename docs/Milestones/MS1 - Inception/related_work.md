@@ -6,9 +6,7 @@ sidebar_label: Related Work
 
 # Related Work
 
-Our project, "Intelligence in Action: Achieving Trustworthy AI-Driven Networks," integrates machine learning (ML) and automation pipelines (MLOps) with 5G/6G networks, emphasizing trust, risk, and security management with dynamic network participation. We reviewed key platforms and research. For each we assembled key features that may be relevant to our proejct.
-
-## Relevant Research Papers:
+Our project, "Intelligence in Action: Achieving Trustworthy AI-Driven Networks," integrates machine learning (ML) and automation pipelines (MLOps) with 5G/6G networks, emphasizing trust, risk, and security management with dynamic network participation. We reviewed key platforms and research. For each we assembled key features that may be relevant to our project.
 
 The increasing complexity of 5G and 6G networks is driving the integration of Machine Learning (ML) and MLOps techniques to automate decisions, predict failures, and continuously optimize performance <sup>[[1]](#ref1)</sup><sup>[[2]](#ref2)</sup>. However, the reliability and security of these solutions depend on how they are managed, audited, and updated, leading to the need for AI-native and trustworthy architectures such as NWDAF and RIGOUROUS <sup>[[3]](#ref3)</sup><sup>[[4]](#ref4)</sup>.
 
