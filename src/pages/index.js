@@ -133,44 +133,13 @@ function ProjectDescription() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
-  const [showNavbar, setShowNavbar] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Get the hero section height
-      const heroSection = document.querySelector(`.${styles.heroBanner}`);
-      if (heroSection) {
-        const heroHeight = heroSection.offsetHeight;
-        // Show navbar when scrolled past the hero section
-        setShowNavbar(window.scrollY > heroHeight);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <Layout
       title={siteConfig.title || "Microsite"}
       description="A webpage for tracking project process."
     >
-      <style>{`
-        .navbar {
-          position: fixed;
-          top: 0;
-          width: 100%;
-          z-index: 1000;
-          backdrop-filter: blur(10px);
-          background-color: rgba(255, 255, 255, 0.95);
-          box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
-          transition: transform 0.3s ease, opacity 0.3s ease;
-          ${!showNavbar ? 'transform: translateY(-100%); opacity: 0; pointer-events: none;' : 'transform: translateY(0); opacity: 1;'}
-        }
-        [data-theme='dark'] .navbar {
-          background-color: rgba(30, 41, 59, 0.95);
-        }
-      `}</style>
+
       <HomepageHeader />
       <main className={styles.mainContent}>
         <ProjectDescription />
