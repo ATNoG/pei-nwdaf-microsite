@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
   <Link to="/pei-nwdaf-microsite/docs/category/ms1-inception" className={styles.milestoneCard}>
     <div className={styles.milestoneHeader}>
       <h2>MS1</h2>
-      <span className={styles.milestoneBadge}>Active</span>
+      <span className={`${styles.milestoneBadge} ${styles.done}`}>Done</span>
     </div>
     <h3>Inception</h3>
     <div className={styles.milestoneFooter}>
@@ -23,7 +23,7 @@ import Link from '@docusaurus/Link';
   <Link to="/pei-nwdaf-microsite/docs/category/ms2-elaboration" className={styles.milestoneCard}>
     <div className={styles.milestoneHeader}>
       <h2>MS2</h2>
-      <span className={`${styles.milestoneBadge} ${styles.comingSoon}`}>Soon</span>
+      <span className={styles.milestoneBadge}>Active</span>
     </div>
     <h3>Elaboration</h3>
     <div className={styles.milestoneFooter}>
