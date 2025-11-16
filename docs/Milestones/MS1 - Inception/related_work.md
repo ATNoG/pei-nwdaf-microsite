@@ -1,6 +1,8 @@
 ---
 title: Related Work
 sidebar_label: Related Work
+id: ms1-related-work
+slug: /Milestones/MS1-Inception/related-work
 ---
 
 
