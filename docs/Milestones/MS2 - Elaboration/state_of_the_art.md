@@ -48,12 +48,11 @@ Is a cloud-native, 3GPP-compliant solution tailored for 5G networks, leveraging 
 
 
 ## Diferences
-| Open Source | Prediction Metrics | Decision Making | MLOps automation |
-Our Project | yes | yes | yes | yes |
-Nokia AVA | no | yes | yes | yes |
-Ericsson | no | yes | yes | yes |
+![Comparison Table](/img/state_of_the_art/diferences.png)
 
----
+## Technologies
+![Technologies Table](/img/state_of_the_art/tech.png)
+
 ## References
 - <a name="ref1"></a> [1] A. Kunz, S. B. Mary Baskaran, K. Samdanis and S. Paul, "A Network Security Insight based on AI/ML for 5G Advanced & Beyond," 2023 IEEE Future Networks World Forum (FNWF), Baltimore, MD, USA, 2023, pp. 1-6, doi: 10.1109/FNWF58287.2023.10520559.
 - <a name="ref2"></a> [2] S. Marinova, Y. Tian and A. Leon-Garcia, "E2E Network Slice Assurance for B5G/6G: Realizing Data Collection and Management, MLOps, and Closed-Loop Control," in IEEE Open Journal of the Communications Society, vol. 6, pp. 759-774, 2025, doi: 10.1109/OJCOMS.2025.3528644.
