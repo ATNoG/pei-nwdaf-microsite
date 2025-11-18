@@ -35,7 +35,7 @@ const sidebars = {
               title: "MS2 - Elaboration",
             },
             items: [
-              { type: "doc", id: "Milestones/MS2 - Elaboration/slides" },
+              { type: "doc", id: "Milestones/MS2 - Elaboration/deliverables" },
               { type: "doc", id: "Milestones/MS2 - Elaboration/state_of_the_art" },
               { type: "doc", id: "Milestones/MS2 - Elaboration/requirements" }, // requirements.md (commented: file does not exist)
               { type: "doc", id: "Milestones/MS2 - Elaboration/use_cases" }, // use_cases.md (commented: file does not exist)
