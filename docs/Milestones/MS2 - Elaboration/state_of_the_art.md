@@ -47,11 +47,13 @@ Is a cloud-native, 3GPP-compliant solution tailored for 5G networks, leveraging 
  - Risk Management on AI Decision Making
 
 
-## Diferences
-| Open Source | Prediction Metrics | Decision Making | MLOps automation |
-Our Project | yes | yes | yes | yes |
-Nokia AVA | no | yes | yes | yes |
-Ericsson | no | yes | yes | yes |
+## Differences
+
+| Solution      | Open Source | Prediction Metrics | Decision Making | MLOps Automation |
+|---------------|:-----------:|:------------------:|:---------------:|:----------------:|
+| Our Project   |    ✔️     |       ✔️         |     ✔️        |     ✔️         |
+| Nokia AVA     |     ❌      |       ✔️         |     ✔️        |     ✔️         |
+| Ericsson      |     ❌      |       ✔️         |     ✔️        |     ✔️         |
 
 ---
 ## References
