@@ -3,4 +3,7 @@ title: Architecture
 sidebar_label: Architecture
 ---
 
-![Architecture Diagram](/img/architecture.png)
+import ArchitectureSvg from '@site/static/img/architecture.svg';
+
+<ArchitectureSvg style={{ width: '1300px', height: '700px' }} role="img" />
+

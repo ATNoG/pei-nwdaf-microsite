@@ -37,8 +37,8 @@ const sidebars = {
             items: [
               { type: "doc", id: "Milestones/MS2 - Elaboration/slides" },
               { type: "doc", id: "Milestones/MS2 - Elaboration/state_of_the_art" },
-              // { type: "doc", id: "Milestones/MS2 - Elaboration/requirements" }, // requirements.md (commented: file does not exist)
-              // { type: "doc", id: "Milestones/MS2 - Elaboration/use_cases" }, // use_cases.md (commented: file does not exist)
+              { type: "doc", id: "Milestones/MS2 - Elaboration/requirements" }, // requirements.md (commented: file does not exist)
+              { type: "doc", id: "Milestones/MS2 - Elaboration/use_cases" }, // use_cases.md (commented: file does not exist)
               { type: "doc", id: "Milestones/MS2 - Elaboration/architecture" }, // architecture (commented: file does not exist)
               { type: "doc", id: "Milestones/MS2 - Elaboration/domain_model" }, // domain_model.md (commented: file does not exist)
               // { type: "doc", id: "Milestones/MS2 - Elaboration/risk_management" }, // risk_management.md (commented: file does not exist)
