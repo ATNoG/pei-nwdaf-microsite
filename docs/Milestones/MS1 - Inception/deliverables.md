@@ -12,3 +12,5 @@ sidebar_label: Deliverables
     allow="fullscreen">
   </iframe>
 </div>
+
+You can also view the slides directly on [Canva](https://www.canva.com/design/DAG2UmdrHOU/zic9xzwo5sVU5DbqtVYsxA/view)
