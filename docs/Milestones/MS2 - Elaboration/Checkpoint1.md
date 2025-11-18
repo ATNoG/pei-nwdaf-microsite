@@ -12,3 +12,6 @@ sidebar_label: Checkpoint 1
     allow="fullscreen">
   </iframe>
 </div>
+
+
+You can also view the slides directly on [Canva](https://www.canva.com/design/DAG4aLwcYio/sGHFOh_8OciALQY5qTRgFg/view)
