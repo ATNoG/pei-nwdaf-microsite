@@ -14,4 +14,4 @@ sidebar_label: Deliverables
 </div>
 
 
-You can also view the slides directly on [Canva](https://www.canva.com/design/DAG6NjSHxfg/ohtXGYsW26-vNOz9Xwx4Fw/view)
+You can also view the slides directly on [Canva](https://www.canva.com/design/DAG7axkTTic/YB1p9R0reCCubKG0v9HR6w/view)
