@@ -14,4 +14,4 @@ sidebar_label: Checkpoint 3
 </div>
 
 
-You can also view the slides directly on [Canva](https://www.canva.com/design/DAG6NjSHxfg/ohtXGYsW26-vNOz9Xwx4Fw/view)
+You can also view the slides directly on [Canva](https://www.canva.com/design/DAG7BCl--4g/i8XZF2ISjMBHnPXIrFqqYg/view)
