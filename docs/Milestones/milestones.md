@@ -34,9 +34,20 @@ import Link from '@docusaurus/Link';
   <Link to="/pei-nwdaf-microsite/docs/category/ms3-construction" className={styles.milestoneCard}>
     <div className={styles.milestoneHeader}>
       <h2>MS3</h2>
-      <span className={styles.milestoneBadge}>Active</span>
+      <span className={`${styles.milestoneBadge} ${styles.done}`}>Done</span>
     </div>
     <h3>Construction</h3>
+    <div className={styles.milestoneFooter}>
+      <span className={styles.viewButton}>View Details →</span>
+    </div>
+  </Link>
+
+  <Link to="/pei-nwdaf-microsite/docs/category/ms4-construction" className={styles.milestoneCard}>
+    <div className={styles.milestoneHeader}>
+      <h2>MS4</h2>
+      <span className={`${styles.milestoneBadge} ${styles.comingSoon}`}>SOON</span>
+    </div>
+    <h3>-</h3>
     <div className={styles.milestoneFooter}>
       <span className={styles.viewButton}>View Details →</span>
     </div>
