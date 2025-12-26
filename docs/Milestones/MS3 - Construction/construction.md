@@ -26,6 +26,6 @@ This is a high level description of each component for what inhabits in each rep
 
 ## Advantages & Reasoning
 
-It was agreed since the beginning of development that having a monolithic repository for the different system aspects was counter-productive and would go against microservices principles that ensure separation of concerns **ALGUÉM Q ME CORRIJA NESTA PARTE Q ACABEI DE DIZER COM TERMOS MELHORES PARA MICROSERVIÇOS**. 
+It was agreed since the beginning of development that having a monolithic repository for the different system aspects was counter-productive and would go against both services and microservices' principles, that promote ease-of-development without much dependency on another's work.
 
 Submodules offer a realistic perspective of deployment of the system as a whole in a production scenario, which is ideally a distributed, decentralized, aggregation of machines, each with its respective task(s), isolated via containerization (Docker), still allowing more than one service to run on the same host without interference.
