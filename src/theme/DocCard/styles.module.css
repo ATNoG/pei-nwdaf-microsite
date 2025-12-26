@@ -1,17 +1,41 @@
+/* Enhanced DocCard styling */
+
 .cardContainer {
-  --ifm-link-color: var(--ifm-color-emphasis-800);
-  --ifm-link-hover-color: var(--ifm-color-emphasis-700);
+  --ifm-link-color: var(--ifm-font-color-base);
+  --ifm-link-hover-color: var(--ifm-color-primary);
   --ifm-link-hover-decoration: none;
 
-  box-shadow: 0 1.5px 3px 0 rgb(0 0 0 / 15%);
-  border: 1px solid var(--ifm-color-emphasis-200);
-  transition: all var(--ifm-transition-fast) ease;
-  transition-property: border, box-shadow;
+  background: var(--ifm-card-background-color);
+  box-shadow: 0 2px 8px var(--color-shadow), 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-border);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: var(--ifm-global-radius-l);
+  position: relative;
+  overflow: hidden;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.cardContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.cardContainer:hover::before {
+  opacity: 1;
 }
 
 .cardContainer:hover {
   border-color: var(--ifm-color-primary);
-  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 12px 28px var(--color-shadow-strong), 0 6px 14px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px);
 }
 
 .cardContainer *:last-child {
@@ -19,9 +43,20 @@
 }
 
 .cardTitle {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--ifm-font-color-emphasis);
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.cardContainer:hover .cardTitle {
+  color: var(--ifm-color-primary);
 }
 
 .cardDescription {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
+  color: var(--ifm-font-color-secondary);
+  line-height: 1.6;
+  margin-top: 0.75rem;
 }
