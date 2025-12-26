@@ -1,9 +1,7 @@
 ---
-title: Challenges & Future Work
-sidebar_label: Challenges & Future Work
+title: Future Work
+sidebar_label: Future Work
 ---
-## Challenges
-
 
 ## Next Steps
 

@@ -4,95 +4,46 @@ title: Overview
 slug: /
 ---
 
-import React from 'react';
 import Link from '@docusaurus/Link';
+import styles from '@site/src/css/overview.module.css';
 
 # Documentation overview
 
-<div style={{
-  display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-  gap: '1.5rem',
-  marginTop: '2rem',
-  marginBottom: '2rem'
-}}>
-  <Link to="/docs/Milestones/" style={{
-    textDecoration: 'none',
-    color: 'inherit',
-    background: '#ffffff',
-    border: '2px solid rgba(59, 130, 246, 0.2)',
-    borderRadius: '16px',
-    padding: '2rem',
-    boxShadow: '0 4px 6px rgba(59, 130, 246, 0.05), 0 10px 15px rgba(0, 0, 0, 0.08)',
-    transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-    position: 'relative',
-    overflow: 'hidden'
-  }}
-  onMouseEnter={(e) => {
-    e.currentTarget.style.transform = 'translateY(-8px)';
-    e.currentTarget.style.borderColor = '#3b82f6';
-    e.currentTarget.style.boxShadow = '0 12px 24px rgba(59, 130, 246, 0.2), 0 20px 40px rgba(0, 0, 0, 0.12)';
-  }}
-  onMouseLeave={(e) => {
-    e.currentTarget.style.transform = 'translateY(0)';
-    e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.2)';
-    e.currentTarget.style.boxShadow = '0 4px 6px rgba(59, 130, 246, 0.05), 0 10px 15px rgba(0, 0, 0, 0.08)';
-  }}>
-    <h3 style={{
-      fontSize: '1.5rem',
-      fontWeight: '700',
-      background: 'linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)',
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent',
-      backgroundClip: 'text',
-      marginBottom: '0.75rem'
-    }}>Milestones</h3>
-    <p style={{
-      color: '#64748b',
-      fontSize: '1rem',
-      lineHeight: '1.6',
-      margin: 0
-    }}>Project progress through development milestones (MS): MS1, MS2...</p>
+<div className={styles.overviewGrid}>
+  <Link to="/docs/Milestones/" className={styles.overviewCard}>
+    <h3 className={styles.cardTitle}>Milestones</h3>
+    <p className={styles.cardDescription}>Project progress through development milestones (MS): MS1, MS2...</p>
   </Link>
 
-  <Link to="/docs/category/meetings" style={{
-    textDecoration: 'none',
-    color: 'inherit',
-    background: '#ffffff',
-    border: '2px solid rgba(59, 130, 246, 0.2)',
-    borderRadius: '16px',
-    padding: '2rem',
-    boxShadow: '0 4px 6px rgba(59, 130, 246, 0.05), 0 10px 15px rgba(0, 0, 0, 0.08)',
-    transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-    position: 'relative',
-    overflow: 'hidden'
-  }}
-  onMouseEnter={(e) => {
-    e.currentTarget.style.transform = 'translateY(-8px)';
-    e.currentTarget.style.borderColor = '#3b82f6';
-    e.currentTarget.style.boxShadow = '0 12px 24px rgba(59, 130, 246, 0.2), 0 20px 40px rgba(0, 0, 0, 0.12)';
-  }}
-  onMouseLeave={(e) => {
-    e.currentTarget.style.transform = 'translateY(0)';
-    e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.2)';
-    e.currentTarget.style.boxShadow = '0 4px 6px rgba(59, 130, 246, 0.05), 0 10px 15px rgba(0, 0, 0, 0.08)';
-  }}>
-    <h3 style={{
-      fontSize: '1.5rem',
-      fontWeight: '700',
-      background: 'linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)',
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent',
-      backgroundClip: 'text',
-      marginBottom: '0.75rem'
-    }}>Meetings</h3>
-    <p style={{
-      color: '#64748b',
-      fontSize: '1rem',
-      lineHeight: '1.6',
-      margin: 0
-    }}>Meeting minutes and project discussion.</p>
+  <Link to="/docs/category/meetings" className={styles.overviewCard}>
+    <h3 className={styles.cardTitle}>Meetings</h3>
+    <p className={styles.cardDescription}>Meeting minutes and project discussion.</p>
   </Link>
 </div>
+
+<style>{`
+  [data-theme='dark'] .overview-card {
+    background: var(--ifm-card-background-color);
+    border-color: var(--color-border);
+  }
+  [data-theme='dark'] .overview-card:hover {
+    border-color: var(--ifm-color-primary);
+    box-shadow:
+      0 12px 28px rgba(96, 165, 250, 0.25),
+      0 24px 48px rgba(0, 0, 0, 0.3);
+  }
+  [data-theme='dark'] .card-title {
+    background: linear-gradient(135deg, var(--ifm-color-primary-light) 0%, var(--ifm-color-primary-lighter) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  [data-theme='dark'] .overview-card:hover .card-title {
+    background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-lighter) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+`}</style>
 
 ---

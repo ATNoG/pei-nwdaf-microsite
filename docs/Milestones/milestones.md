@@ -42,7 +42,7 @@ import Link from '@docusaurus/Link';
     </div>
   </Link>
 
-  <Link to="/pei-nwdaf-microsite/docs/category/ms4-construction" className={styles.milestoneCard}>
+  <Link to="" className={styles.milestoneCard}>
     <div className={styles.milestoneHeader}>
       <h2>MS4</h2>
       <span className={`${styles.milestoneBadge} ${styles.comingSoon}`}>SOON</span>
