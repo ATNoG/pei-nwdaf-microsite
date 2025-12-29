@@ -54,7 +54,47 @@ const config = {
       },
     ],
   ],
-
+plugins: [
+  [
+    "@scalar/docusaurus",
+    {
+      id: "ingestion",
+      route: "/api/ingestion",
+      showNavLink: false, // This hides the auto-generated navbar item
+      configuration: {
+        spec: {
+          content: require('./static/openapi/ingestion.json'),
+        },
+      },
+    },
+  ],
+  [
+    "@scalar/docusaurus",
+    {
+      id: "ml",
+      route: "/api/ml",
+      showNavLink: false, // This hides the auto-generated navbar item
+      configuration: {
+        spec: {
+          content: require('./static/openapi/ml.json'),
+        },
+      },
+    },
+  ],
+  [
+    "@scalar/docusaurus",
+    {
+      id: "storage",
+      route: "/api/storage",
+      showNavLink: false, // This hides the auto-generated navbar item
+      configuration: {
+        spec: {
+          content: require('./static/openapi/storage.json'),
+        },
+      },
+    },
+  ],
+],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -74,6 +114,24 @@ const config = {
           { to: "/", label: "Home", position: "left", exact: true },
           { to: "/team", label: "Team", position: "left" },
           { to: "/docs", label: "Docs", position: "left" },
+          {
+              label: "API Reference",
+              position: "left",
+              items: [
+              {
+                  label: "Data Ingestion",
+                  to: "/api/ingestion",
+              },
+              {
+                  label: "ML",
+                  to: "/api/ml",
+              },
+              {
+                  label: "Data Storage",
+                  to: "/api/storage",
+              },
+              ],
+          },
           {
             href: "https://github.com/ATNoG/pei-nwdaf",
             label: "Team Repos",

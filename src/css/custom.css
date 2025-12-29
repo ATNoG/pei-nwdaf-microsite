@@ -176,6 +176,27 @@ body {
   position: relative;
 }
 
+/* Hide the dropdown background/rectangle on hover */
+.navbar__item.dropdown:hover::before,
+.navbar__item.dropdown:hover::after {
+  display: none;
+}
+
+/* Alternative: if the above doesn't work, try this */
+.navbar__link--active::after,
+.navbar__item--show-dropdown::before {
+  display: none !important;
+}
+/* Or hide any pseudo-elements on dropdown hover */
+.dropdown > .navbar__link::after {
+  display: none;
+}
+
+/* Or hide any pseudo-elements on dropdown hover */
+.dropdown > .navbar__link:hover::after {
+  display: none;
+}
+
 .navbar__link::after {
   content: '';
   position: absolute;
