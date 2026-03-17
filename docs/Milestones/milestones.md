@@ -42,9 +42,21 @@ import Link from '@docusaurus/Link';
     </div>
   </Link>
 
-  <Link to="" className={styles.milestoneCard}>
+  <Link to="/pei-nwdaf-microsite/docs/category/ms4-digital-accessibility-and-usability" className={styles.milestoneCard}>
     <div className={styles.milestoneHeader}>
       <h2>MS4</h2>
+      <span className={`${styles.milestoneBadge} ${styles.done}`}>Done</span>
+    </div>
+    <h3>Digital Accessibility and Usability</h3>
+    <div className={styles.milestoneFooter}>
+      <span className={styles.viewButton}>View Details →</span>
+    </div>
+  </Link>
+
+
+  <Link to="" className={styles.milestoneCard}>
+    <div className={styles.milestoneHeader}>
+      <h2>MS5</h2>
       <span className={`${styles.milestoneBadge} ${styles.comingSoon}`}>SOON</span>
     </div>
     <h3>-</h3>
