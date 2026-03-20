@@ -55,16 +55,34 @@ const config = {
     ],
   ],
 plugins: [
+  // Disable SVGO for large SVGs that exceed parser buffer limits
+  function disableSvgo() {
+    return {
+      name: 'disable-svgo',
+      configureWebpack(config) {
+        for (const rule of config.module.rules) {
+          if (!rule.oneOf) continue;
+          for (const oneOf of rule.oneOf) {
+            const use = Array.isArray(oneOf.use) ? oneOf.use : [oneOf.use];
+            for (const loader of use) {
+              if (loader?.loader?.includes('@svgr') && loader.options) {
+                loader.options.svgo = false;
+              }
+            }
+          }
+        }
+        return {};
+      },
+    };
+  },
   [
     "@scalar/docusaurus",
     {
       id: "ingestion",
       route: "/api/ingestion",
-      showNavLink: false, // This hides the auto-generated navbar item
+      showNavLink: false,
       configuration: {
-        spec: {
-          content: require('./static/openapi/ingestion.json'),
-        },
+        spec: { content: require('./static/openapi/ingestion.json') },
       },
     },
   ],
@@ -73,11 +91,9 @@ plugins: [
     {
       id: "ml",
       route: "/api/ml",
-      showNavLink: false, // This hides the auto-generated navbar item
+      showNavLink: false,
       configuration: {
-        spec: {
-          content: require('./static/openapi/ml.json'),
-        },
+        spec: { content: require('./static/openapi/ml.json') },
       },
     },
   ],
@@ -86,11 +102,31 @@ plugins: [
     {
       id: "storage",
       route: "/api/storage",
-      showNavLink: false, // This hides the auto-generated navbar item
+      showNavLink: false,
       configuration: {
-        spec: {
-          content: require('./static/openapi/storage.json'),
-        },
+        spec: { content: require('./static/openapi/storage.json') },
+      },
+    },
+  ],
+  [
+    "@scalar/docusaurus",
+    {
+      id: "decision",
+      route: "/api/decision",
+      showNavLink: false,
+      configuration: {
+        spec: { content: require('./static/openapi/decision.json') },
+      },
+    },
+  ],
+  [
+    "@scalar/docusaurus",
+    {
+      id: "policy",
+      route: "/api/policy",
+      showNavLink: false,
+      configuration: {
+        spec: { content: require('./static/openapi/policy.json') },
       },
     },
   ],
@@ -118,18 +154,11 @@ plugins: [
               label: "API Reference",
               position: "left",
               items: [
-              {
-                  label: "Data Ingestion",
-                  to: "/api/ingestion",
-              },
-              {
-                  label: "ML",
-                  to: "/api/ml",
-              },
-              {
-                  label: "Data Storage",
-                  to: "/api/storage",
-              },
+              { label: "Data Ingestion", to: "/api/ingestion" },
+              { label: "ML", to: "/api/ml" },
+              { label: "Data Storage", to: "/api/storage" },
+              { label: "Decision", to: "/api/decision" },
+              { label: "Policy", to: "/api/policy" },
               ],
           },
           {
