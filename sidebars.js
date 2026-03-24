@@ -72,6 +72,17 @@ const sidebars = {
             { type: "doc", id: "Milestones/MS4 - Digital Accessibility and Usability/deliverables" }
           ],
         },
+        {
+          type: "category",
+          label: "MS5-Prototype",
+          link: {
+            type: "generated-index",
+            title: "MS5 - Prototype",
+          },
+          items: [
+            { type: "doc", id: "Milestones/MS5 - Prototype/deliverables" }
+          ],
+        },
       ],
     },
     {
