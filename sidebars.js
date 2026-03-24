@@ -56,7 +56,6 @@ const sidebars = {
                 { type: "doc", id: "Semester 1/Milestones/MS2 - Elaboration/risk_management" },
                 { type: "doc", id: "Semester 1/Milestones/MS2 - Elaboration/scope_definition" },
                 { type: "doc", id: "Semester 1/Milestones/MS2 - Elaboration/mockups" },
-                { type: "doc", id: "Semester 1/Milestones/MS2 - Elaboration/personas" },
               ],
             },
             {
