@@ -8,6 +8,8 @@ import Link from '@docusaurus/Link';
 
 # Project Milestones
 
+## Semester 1
+
 <div className={styles.milestonesContainer}>
   <Link to="/pei-nwdaf-microsite/docs/category/ms1-inception" className={styles.milestoneCard}>
     <div className={styles.milestoneHeader}>
@@ -41,10 +43,14 @@ import Link from '@docusaurus/Link';
       <span className={styles.viewButton}>View Details →</span>
     </div>
   </Link>
+</div>
 
-  <Link to="/pei-nwdaf-microsite/docs/category/ms4-digital-accessibility-and-usability" className={styles.milestoneCard}>
+## Semester 2
+
+<div className={styles.milestonesContainer}>
+  <Link to="/pei-nwdaf-microsite/docs/category/ms1-digital-accessibility-and-usability" className={styles.milestoneCard}>
     <div className={styles.milestoneHeader}>
-      <h2>MS4</h2>
+      <h2>MS1</h2>
       <span className={`${styles.milestoneBadge} ${styles.done}`}>Done</span>
     </div>
     <h3>Digital Accessibility and Usability</h3>
@@ -53,9 +59,9 @@ import Link from '@docusaurus/Link';
     </div>
   </Link>
 
-  <Link to="/pei-nwdaf-microsite/docs/category/ms5-prototype" className={styles.milestoneCard}>
+  <Link to="/pei-nwdaf-microsite/docs/category/ms2-prototype" className={styles.milestoneCard}>
     <div className={styles.milestoneHeader}>
-      <h2>MS5</h2>
+      <h2>MS2</h2>
       <span className={`${styles.milestoneBadge} ${styles.done}`}>Done</span>
     </div>
     <h3>Prototype</h3>
@@ -64,10 +70,9 @@ import Link from '@docusaurus/Link';
     </div>
   </Link>
 
-
-  <Link to="/pei-nwdaf-microsite/docs/category/ms6-Legal-requirements,-technical-and-business-risks" className={styles.milestoneCard}>
+  <Link to="/pei-nwdaf-microsite/docs/category/ms3-Legal-requirements,-technical-and-business-risks" className={styles.milestoneCard}>
     <div className={styles.milestoneHeader}>
-      <h2>MS6</h2>
+      <h2>MS3</h2>
       <span className={`${styles.milestoneBadge} ${styles.done}`}>Done</span>
     </div>
     <h3>Legal requirements, technical and business risks</h3>
@@ -76,12 +81,12 @@ import Link from '@docusaurus/Link';
     </div>
   </Link>
 
-   <Link to="" className={styles.milestoneCard}>
+  <Link to="" className={styles.milestoneCard}>
     <div className={styles.milestoneHeader}>
-      <h2>MS7</h2>
+      <h2>MS4</h2>
       <span className={`${styles.milestoneBadge} ${styles.comingSoon}`}>SOON</span>
     </div>
-    <h3>-</h3>
+    <h3>System component validation (performance,scalability, testing, security)</h3>
     <div className={styles.milestoneFooter}>
       <span className={styles.viewButton}>View Details →</span>
     </div>
