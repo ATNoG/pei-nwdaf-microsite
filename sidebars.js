@@ -83,6 +83,19 @@ const sidebars = {
             { type: "doc", id: "Milestones/MS5 - Prototype/deliverables" }
           ],
         },
+        {
+          type: "category",
+          label: "MS6-Legal requirements, technical and business risks",
+          link: {
+            type: "generated-index",
+            title: "MS6 - Legal requirements, technical and business risks",
+            slug: "/category/ms6-Legal-requirements,-technical-and-business-risks",
+          },
+          items: [
+            { type: "doc", id: "Milestones/MS6 - Legal requirements, technical and business risks/Checkpoint6" },
+            { type: "doc", id: "Milestones/MS6 - Legal requirements, technical and business risks/deliverables" }
+          ],
+        },
       ],
     },
     {

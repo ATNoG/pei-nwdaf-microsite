@@ -18,7 +18,7 @@ MLOps automation platforms:
 
 ## Existing Solutions
 The Network Data Analytics Function (NWDAF), defined by 3GPP, represents the standardized framework for analytics and AI-driven automation within the 5G Core (5GC) network. Industrial implementations of NWDAF extend this framework with proprietary capabilities to enhance performance, reduce operational complexity, and enable predictive network management.
-Among the leading commercial solutions are those from Ericsson and Nokia, which demonstrate mature, cloud-native, and 3GPP-compliant analytics platforms. This is a continuation of the [Related Work page of MS1](/docs/Milestones/MS1%20-%20Inception/related_work.md)
+Among the leading commercial solutions are those from Ericsson and Nokia, which demonstrate mature, cloud-native, and 3GPP-compliant analytics platforms. This is a continuation of the [Related Work page of MS1](../MS1%20-%20Inception/related_work.md)
 
 ### Ericsson <sup>[[10]](#ref10)</sup>
 
