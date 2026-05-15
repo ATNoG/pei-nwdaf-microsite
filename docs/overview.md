@@ -10,7 +10,7 @@ import styles from '@site/src/css/overview.module.css';
 # Documentation overview
 
 <div className={styles.overviewGrid}>
-  <Link to="/docs/Milestones/" className={styles.overviewCard}>
+  <Link to="/docs/category/milestones" className={styles.overviewCard}>
     <h3 className={styles.cardTitle}>Milestones</h3>
     <p className={styles.cardDescription}>Project progress through development milestones (MS): MS1, MS2...</p>
   </Link>
