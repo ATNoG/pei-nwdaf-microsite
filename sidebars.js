@@ -146,6 +146,18 @@ const sidebars = {
         { type: "doc", id: "meetings/m14" },
       ],
     },
+    {
+      type: "category",
+      label: "Results",
+      link: {
+        type: "generated-index",
+        title: "Results",
+        description: "Performance tests and validation results.",
+      },
+      items: [
+        { type: "doc", id: "Results/performance-tests" },
+      ],
+    },
   ],
 };
 
