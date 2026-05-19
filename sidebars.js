@@ -77,7 +77,7 @@ const sidebars = {
           link: {
             type: "generated-index",
             title: "Semester 2",
-            description: "Milestones from the second semester: MS1 - Digital Accessibility and Usability, MS2 - Prototype, MS3 - Legal requirements, technical and business risks",
+            description: "Milestones from the second semester: MS1 - Digital Accessibility and Usability, MS2 - Prototype, MS3 - Legal requirements, technical and business risks, MS4 - System component validation (performance,scalability, testing, security)",
           },
           items: [
             {
@@ -114,6 +114,17 @@ const sidebars = {
               items: [
                 { type: "doc", id: "Semester 2/Milestones/MS3 - Legal requirements, technical and business risks/Checkpoint6" },
                 { type: "doc", id: "Semester 2/Milestones/MS3 - Legal requirements, technical and business risks/deliverables" }
+              ],
+            },
+            {
+              type: "category",
+              label: "MS4-System component validation (performance,scalability, testing, security)",
+              link: {
+                type: "generated-index",
+                title: "MS4 - System component validation (performance,scalability, testing, security)",
+              },
+              items: [
+                { type: "doc", id: "Semester 2/Milestones/MS4 - System component validation (performance,scalability, testing, security) /deliverables" }
               ],
             },
           ],

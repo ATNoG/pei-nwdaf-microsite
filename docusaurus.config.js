@@ -215,7 +215,7 @@ footer: {
       ]
     }
   ],
-  copyright: 'Copyright 2025 <br>ATNoG @ IT @ UA'
+  copyright: 'Copyright 2026 <br>ATNoG @ IT @ UA'
 },
       prism: {
         theme: prismThemes.github,
