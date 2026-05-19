@@ -54,83 +54,83 @@ const config = {
       },
     ],
   ],
-plugins: [
-  // Disable SVGO for large SVGs that exceed parser buffer limits
-  function disableSvgo() {
-    return {
-      name: 'disable-svgo',
-      configureWebpack(config) {
-        for (const rule of config.module.rules) {
-          if (!rule.oneOf) continue;
-          for (const oneOf of rule.oneOf) {
-            const use = Array.isArray(oneOf.use) ? oneOf.use : [oneOf.use];
-            for (const loader of use) {
-              if (loader?.loader?.includes('@svgr') && loader.options) {
-                loader.options.svgo = false;
+  plugins: [
+    // Disable SVGO for large SVGs that exceed parser buffer limits
+    function disableSvgo() {
+      return {
+        name: 'disable-svgo',
+        configureWebpack(config) {
+          for (const rule of config.module.rules) {
+            if (!rule.oneOf) continue;
+            for (const oneOf of rule.oneOf) {
+              const use = Array.isArray(oneOf.use) ? oneOf.use : [oneOf.use];
+              for (const loader of use) {
+                if (loader?.loader?.includes('@svgr') && loader.options) {
+                  loader.options.svgo = false;
+                }
               }
             }
           }
-        }
-        return {};
-      },
-    };
-  },
-  [
-    "@scalar/docusaurus",
-    {
-      id: "ingestion",
-      route: "/api/ingestion",
-      showNavLink: false,
-      configuration: {
-        spec: { content: require('./static/openapi/ingestion.json') },
-      },
+          return {};
+        },
+      };
     },
-  ],
-  [
-    "@scalar/docusaurus",
-    {
-      id: "ml",
-      route: "/api/ml",
-      showNavLink: false,
-      configuration: {
-        spec: { content: require('./static/openapi/ml.json') },
+    [
+      "@scalar/docusaurus",
+      {
+        id: "ingestion",
+        route: "/api/ingestion",
+        showNavLink: false,
+        configuration: {
+          spec: { content: require('./static/openapi/ingestion.json') },
+        },
       },
-    },
-  ],
-  [
-    "@scalar/docusaurus",
-    {
-      id: "storage",
-      route: "/api/storage",
-      showNavLink: false,
-      configuration: {
-        spec: { content: require('./static/openapi/storage.json') },
+    ],
+    [
+      "@scalar/docusaurus",
+      {
+        id: "ml",
+        route: "/api/ml",
+        showNavLink: false,
+        configuration: {
+          spec: { content: require('./static/openapi/ml.json') },
+        },
       },
-    },
-  ],
-  [
-    "@scalar/docusaurus",
-    {
-      id: "decision",
-      route: "/api/decision",
-      showNavLink: false,
-      configuration: {
-        spec: { content: require('./static/openapi/decision.json') },
+    ],
+    [
+      "@scalar/docusaurus",
+      {
+        id: "storage",
+        route: "/api/storage",
+        showNavLink: false,
+        configuration: {
+          spec: { content: require('./static/openapi/storage.json') },
+        },
       },
-    },
-  ],
-  [
-    "@scalar/docusaurus",
-    {
-      id: "policy",
-      route: "/api/policy",
-      showNavLink: false,
-      configuration: {
-        spec: { content: require('./static/openapi/policy.json') },
+    ],
+    [
+      "@scalar/docusaurus",
+      {
+        id: "decision",
+        route: "/api/decision",
+        showNavLink: false,
+        configuration: {
+          spec: { content: require('./static/openapi/decision.json') },
+        },
       },
-    },
+    ],
+    [
+      "@scalar/docusaurus",
+      {
+        id: "policy",
+        route: "/api/policy",
+        showNavLink: false,
+        configuration: {
+          spec: { content: require('./static/openapi/policy.json') },
+        },
+      },
+    ],
   ],
-],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -148,22 +148,23 @@ plugins: [
         },
         items: [
           { to: "/", label: "Home", position: "left", exact: true },
-          { to: "/team", label: "Team", position: "left" },
+          { to: "/docs/summary", label: "Summary", position: "left" },
           { to: "/docs", label: "Docs", position: "left" },
           {
-              label: "API Reference",
-              position: "left",
-              items: [
+            label: "API Reference (outdated)",
+            position: "left",
+            items: [
               { label: "Data Ingestion", to: "/api/ingestion" },
               { label: "ML", to: "/api/ml" },
               { label: "Data Storage", to: "/api/storage" },
               { label: "Decision", to: "/api/decision" },
               { label: "Policy", to: "/api/policy" },
-              ],
+            ],
           },
+          { to: "/team", label: "Team", position: "left" },
           {
             href: "https://github.com/ATNoG/pei-nwdaf",
-            label: "Team Repos",
+            label: "Github",
             position: "right",
           },
         ],
