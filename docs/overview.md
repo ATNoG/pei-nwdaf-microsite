@@ -19,6 +19,11 @@ import styles from '@site/src/css/overview.module.css';
     <h3 className={styles.cardTitle}>Meetings</h3>
     <p className={styles.cardDescription}>Meeting minutes and project discussion.</p>
   </Link>
+
+  <Link to="/docs/category/results" className={styles.overviewCard}>
+    <h3 className={styles.cardTitle}>Results</h3>
+    <p className={styles.cardDescription}>Performance tests, demos, and final deliverables.</p>
+  </Link>
 </div>
 
 <style>{`
