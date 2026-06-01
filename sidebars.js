@@ -168,6 +168,7 @@ const sidebars = {
       items: [
         { type: "doc", id: "Results/performance-tests" },
         { type: "doc", id: "Results/poster" },
+        { type: "doc", id: "Results/final-presentation" },
         { type: "doc", id: "Results/demos" },
       ],
     },
