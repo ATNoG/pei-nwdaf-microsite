@@ -14,6 +14,11 @@ const config = {
   tagline: "",
   favicon: "img/icon.png",
 
+  // Match the netdevcloud dashboard typography: Outfit (display/body) + JetBrains Mono
+  stylesheets: [
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&display=swap",
+  ],
+
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -151,7 +156,7 @@ const config = {
           { to: "/docs/summary", label: "Summary", position: "left" },
           { to: "/docs", label: "Docs", position: "left" },
           {
-            label: "API Reference (outdated)",
+            label: "API Reference",
             position: "left",
             items: [
               { label: "Data Ingestion", to: "/api/ingestion" },

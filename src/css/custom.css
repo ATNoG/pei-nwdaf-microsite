@@ -47,8 +47,8 @@
   --color-shadow-strong: rgba(59, 130, 246, 0.2);
 
   /* Font improvements */
-  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  --ifm-font-family-monospace: 'SF Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'Consolas', 'Courier New', monospace;
+  --ifm-font-family-base: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'Consolas', 'Courier New', monospace;
   --ifm-heading-font-weight: 700;
   --ifm-line-height-base: 1.75;
 
@@ -137,13 +137,19 @@ body {
   background: var(--color-accent-hover);
 }
 
-/* Navbar styling - enhanced with glassmorphism */
+/* Navbar styling - enhanced */
+/* NOTE: do NOT put backdrop-filter/filter/transform on .navbar — it creates a
+   containing block that traps the fixed .navbar-sidebar (mobile drawer won't open). */
 .navbar {
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid var(--color-border);
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Glass blur applied to an inner layer so it doesn't contain the mobile sidebar */
+.navbar__inner {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .navbar--fixed-top {
